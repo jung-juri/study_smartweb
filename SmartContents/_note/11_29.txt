@@ -1,0 +1,10 @@
+img에 원래 여백있음
+없애는태그 vertical-align:top
+
+border-collapse: collapse; (보더를 한줄로)
+
+white-space:nowrap (줄바꿈 못하게, 한줄로길게늘어짐)
+
+text-overflow:ellipsis (넘어간 글자를 ... 으로 표시)
+
+요소 :only-child (요소 안의 모든것 선택)

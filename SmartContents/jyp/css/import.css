@@ -1,0 +1,450 @@
+.nonebg {
+  background: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+dl {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+ul,
+ol,
+dl {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-image: url("http://wondergirls.jype.com/images/bg-pc.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center 0;
+}
+header {
+  position: relative;
+  z-index: 1px;
+  height: 100px;
+  padding: 0 20px;
+  background-color: rgba(255, 255, 255, 0.53);
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4);
+}
+header h1 a {
+  display: block;
+  width: 104px;
+  height: 52px;
+  padding: 25px;
+  background-image: url("http://wondergirls.jype.com/images/logo-s.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  float: left;
+  transition: 1s;
+  text-indent: -9999px;
+  text-size: 0;
+  /*익스플로러 호환 문제 때문에 indent와 항상 같이 써줘야함.*/
+}
+header h1 a:hover {
+  transform: rotatey(180deg);
+}
+header nav {
+  position: relative;
+  left: 20px;
+  float: right;
+}
+header nav .menu {
+  display: none;
+  height: 55px;
+  width: 200px;
+  background-color: #F28195;
+  line-height: 55px;
+  text-align: center;
+  color: #FFF;
+  position: relative;
+  transition: 1s;
+}
+header nav ul {
+  z-index: 4;
+}
+header nav ul li {
+  transition: 1s;
+  float: left;
+  height: 100px;
+  /*익스플로러 하위 버전에서는 부모의 영향을 받지 않아서 넣어줘야함*/
+  line-height: 100px;
+}
+header nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+header nav ul li a {
+  padding: 0 18px;
+  color: #F28195;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  /*크기를 상속 받으려고 ????*/
+  transition: .1s;
+}
+header nav ul li a:hover {
+  border-top: 3px #F28195 solid;
+  color: #f4c22d;
+}
+section {
+  border: 1px #F00 sold;
+}
+section .biglogo {
+  width: 320px;
+  height: 320px;
+  background-image: url("http://wondergirls.jype.com/images/mainlogo.png");
+  background-size: 100%;
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transition: 1s;
+  z-index: 2;
+}
+section .biglogo:hover {
+  transform: scale(1.3);
+  opacity: 0;
+}
+footer {
+  width: 100%;
+  height: 57px;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.53);
+}
+footer h2 a {
+  position: relative;
+  left: 7%;
+  top: 5px;
+  text-indent: -9999px;
+  width: 115px;
+  height: 45px;
+  float: left;
+  background: url("http://wondergirls.jype.com/images/jyplogo-b.png") no-repeat;
+}
+footer ul {
+  float: right;
+  position: relative;
+  top: 15px;
+  right: 5%;
+}
+footer ul li {
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  margin-right: 10px;
+  line-height: 30px;
+  text-align: center;
+}
+footer ul li a {
+  display: inline-block;
+  color: #000000;
+  vertical-align: top;
+}
+section > .title {
+  margin-bottom: 50px;
+  height: 60px;
+  padding: 30px 0 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  text-transform: capitalize;
+  text-indent: -99999px;
+  font-size: 0;
+}
+section > .title h2 {
+  width: 306px;
+  height: 51px;
+  margin: 0 auto;
+}
+section.disco .title h2 {
+  background-image: url(http://wondergirls.jype.com/images/title-discography.png);
+}
+section.disco .global-leng {
+  width: 1000px;
+  margin: 0 auto;
+  height: 31px;
+}
+section.disco .global-leng a {
+  margin-bottom: 10px;
+  color: #FFF;
+  font-size: 11px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-image: url(http://wondergirls.jype.com/images/discography/a-titlebg.png);
+  vertical-align: top;
+}
+section.disco .wrap {
+  margin: 0 auto 100px;
+  max-width: 1000px;
+}
+section.disco .wrap .album-thumb,
+section.disco .wrap .album-contents {
+  display: table-cell;
+}
+section.disco .wrap .album-thumb {
+  width: 35.2%;
+}
+section.disco .wrap .album-thumb > img {
+  width: 100%;
+}
+section.disco .wrap .album-thumb ol {
+  list-style-position: inside;
+}
+section.disco .wrap .album-contents {
+  vertical-align: top;
+  padding-left: 28px;
+}
+section.disco .wrap .album-contents > strong {
+  float: left;
+}
+section.disco .wrap .album-contents span {
+  float: right;
+  font-size: 12px;
+}
+section.disco .wrap .album-contents .title {
+  height: 58px;
+  background-image: url(http://wondergirls.jype.com/images/discography/a-titlebg.png);
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  color: #FFF;
+  font-size: 1.5em;
+  line-height: 50px;
+  padding: 0 20px;
+}
+section.disco .wrap .album-contents .text {
+  font-size: 12px;
+  line-height: 17px;
+  font-family: 나눔고딕;
+  color: #3F3F3F;
+}
+section.disco .wrap .album-contents .text strong {
+  line-height: 17px;
+  font-size: 13px;
+}
+section.disco .wrap .album-list {
+  margin-top: 30px;
+  text-align: center;
+}
+section.disco .wrap .album-list .list-btn a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #CCC;
+  display: inline-block;
+}
+section.disco .wrap .album-list li {
+  vertical-align: top;
+  display: inline-block;
+}
+section.disco .wrap .album-list li .description {
+  display: block;
+}
+section.disco .wrap .album-list li .description span {
+  display: block;
+}
+section.gallery h2 {
+  background-image: url(http://wondergirls.jype.com/images/title-gallery.png);
+}
+section.gallery .grid-list {
+  max-width: 769px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section.gallery .grid-list ul {
+  overflow: hidden;
+}
+section.gallery .grid-list ul li {
+  width: 20%;
+  float: left;
+}
+section.gallery .grid-list ul li img {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  vertical-align: top;
+}
+section.notice h2 {
+  background-image: url(http://wondergirls.jype.com/images/title-noti.png);
+}
+section.notice .list {
+  width: 1000px;
+  margin: 0 auto;
+}
+section.notice .list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+section.notice .list table thead {
+  visibility: hidden;
+}
+section.notice .list table td,
+section.notice .list table th {
+  border-bottom: 1px #000 solid;
+  padding: 4px 0;
+}
+section.notice .list table tr > td:first-child {
+  text-align: center;
+}
+section.notice .list table tr > td:nth-child(3) {
+  text-align: center;
+}
+section.notice .list table td[colspan="3"] div {
+  padding: 40px;
+}
+section.notice .list table .elip {
+  width: 400px;
+  border: 1px #F00 solid;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 769px) {
+  body {
+    background-image: url("http://wondergirls.jype.com/images/bg-720.jpg");
+    background-position: center center;
+  }
+  body h1 a {
+    width: 60px;
+    height: 40px;
+    margin: 5px 0 0 10px;
+    padding: 0;
+    position: relative;
+    left: -20px;
+    background-size: cover;
+  }
+  header {
+    height: 55px;
+    background-color: #ffffff;
+    /*nav뚜껑*/
+  }
+  header nav {
+    /*a뚜껑*/
+    /*ul뚜껑*/
+  }
+  header nav a.menu {
+    display: block;
+  }
+  header nav ul {
+    position: absolute;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    /*li뚜껑*/
+  }
+  header nav ul li {
+    height: 46px;
+    width: 200px;
+    /*a뚜껑*/
+  }
+  header nav ul li a {
+    width: 170px;
+    height: 16px;
+    padding: 15px;
+    line-height: 16px;
+    font-size: 16px;
+    border-left: 0 #F28195 solid;
+  }
+  header nav ul li a:hover {
+    border-top: 0;
+    border-left: 5px #F28195 solid;
+    color: #f4c22d;
+  }
+  /*header뚜껑*/
+  section .biglogo {
+    top: 10%;
+    left: 50%;
+    margin-left: -160px;
+    transform: scale(0.8);
+  }
+}
+/*media뚜껑*/
+@media screen and (max-width: 480px) {
+  body {
+    background-image: url("http://wondergirls.jype.com/images/bg-720.jpg");
+    background-position: center center;
+  }
+  body h1 a {
+    width: 60px;
+    height: 30px;
+    margin: 5px 0 0 10px;
+    padding: 0;
+    position: relative;
+    left: -20px;
+    background-size: cover;
+  }
+  header {
+    height: 40px;
+  }
+  header nav .menu {
+    display: block;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+  }
+  header nav ul li {
+    height: 36px;
+    width: 150px;
+  }
+  header nav ul li a {
+    width: 134px;
+    height: 16px;
+    padding: 10px 8px;
+    line-height: 16px;
+    font-size: 16px;
+    border-left: 0 #F28195 solid;
+  }
+  header nav ul li a:hover {
+    border-top: 0;
+    border-left: 5px #F28195 solid;
+    color: #f4c22d;
+    padding: 15px 8px;
+  }
+  section .biglogo {
+    top: 5%;
+    left: 50%;
+    margin-left: -160px;
+    transform: scale(0.5);
+  }
+  footer {
+    width: 100%;
+    height: 37px;
+  }
+  footer h2 a {
+    background-size: 60%;
+  }
+  footer ul {
+    top: 7px;
+  }
+  footer ul li {
+    width: 23px;
+    height: 23px;
+    border-radius: 3px;
+    margin-right: 7px;
+    line-height: 23px;
+  }
+  footer ul li [class*="flaticon-"]:before {
+    font-size: 12px;
+  }
+}

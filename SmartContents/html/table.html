@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>table</title>
+</head>
+<body>
+
+        <!-- html5는 닫지 않아도 된다.
+            !! 그래도 닫는 습관을 들이삼 !! -->
+      <table>
+            <tr>
+              <td>사과
+              <td>배
+              <td>오렌지
+              <td>포도
+      </table>
+
+<!-- 여기서부터는 선생님 작성 예시(참고용) -->
+
+
+  <table border="1" width="400">
+
+    <caption>시간표</caption>
+
+      <colgroup>
+        <col width="100" />
+        <col width="150" />
+        <col width="100" />
+        <col width="50" />
+      </colgroup>
+
+    <thead>
+      <tr>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+      </tr>
+    </thead>
+    <tfoot>                                <!-- 결과치를 필요로 할 때 thead와 tbody 사이에 위치 -->
+      <tr>
+        <td></td>
+        <td></td>
+        <td>합계</td>
+        <td>100만원</td>
+      </tr>
+    </tfoot>
+    <tbody>
+    <tr>
+      <td colspan="2">사과</td>
+      <td rowspan="2">배</td>
+      <td>오렌지</td>
+      <td>오렌지</td>
+    </tr>
+    <tr>
+      <td>사과</td>
+      <td>배</td>
+      <td>오렌지</td>
+      <td>오렌지</td>
+    </tr>
+  </tbody>
+
+</table>
+
+
+
+<!-- 세로형 테이블 -->
+
+<table border="1" width="400">
+  <caption>세로형 테이블</caption>
+  <tbody>
+  <tr>
+    <th>과일</th>      <!-- 제목으로 설정되는. thead태그 -->
+    <td>배</td>
+    <td>오렌지</td>
+    <td>오렌지</td>
+  </tr>
+  <tr>
+    <th>과일</th>
+    <td>배</td>
+    <td>오렌지</td>
+    <td>오렌지</td>
+  </tr>
+</tbody>
+
+</table>
+
+
+
+<!-- 리딩방향 -->
+
+
+
+<table border="1" width="400">
+  <caption>리딩 방향</caption>
+  <thead>
+    <tr>
+      <th scope="col">title</th>
+      <th scope="col">title</th>
+      <th scope="col">title</th>
+      <th scope="col">title</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th>과일</th>
+    <td>배</td>
+    <td>오렌지</td>
+    <td>오렌지</td>
+  </tr>
+  <tr>
+    <th>과일</th>
+    <td>배</td>
+    <td>오렌지</td>
+    <td>오렌지</td>
+  </tr>
+</tbody>
+
+</table>
+
+<!-- 테이블 젠코딩 방법 -->
+<!-- table>(thead>tr*2>th{title}*6)+(tbody>tr*6>td{title}*6) -->
+<!-- table>(thead>tr*2>th{title$}*6)+(tbody>tr*6>td{title$$}*6) *$$는 자동 숫자 계산(1,2,3.../01,02,03...) -->
+
+<table border="1" width="400">
+  <caption>구조가 복잡한 테이블</caption>
+  <thead>
+    <tr>
+      <th rowspan="2">title1</th>
+      <th colspan="2">title2</th>
+      <th>title4</th>
+      <th colspan="2">title5</th>
+    </tr>
+      <th>title2</th>
+      <th>title3</th>
+      <th>title4</th>
+      <th>title5</th>
+      <th>title6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="2">title01</th>
+      <td>title02</td>
+      <td>title03</td>
+      <th rowspan="2">title04</th>
+      <td>title05</td>
+      <td>title06</td>
+    </tr>
+    <tr>
+      <td>title02</td>
+      <td>title03</td>
+      <td>title05</td>
+      <td>title06</td>
+    </tr>
+    <tr>
+      <th>title01</th>
+      <td>title02</td>
+      <td>title03</td>
+      <th>title04</th>
+      <td>title05</td>
+      <td>title06</td>
+    </tr>
+    <tr>
+      <th>title01</th>
+      <td>title02</td>
+      <td>title03</td>
+      <th>title04</th>
+      <td>title05</td>
+      <td>title06</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style type="text/css">
+        
+        body{
+            font-family: 'Noto Sans KR', 
+            sans-serif; 
+            margin: 0;
+            padding: 0; 
+            background-image: url(pong.png); 
+            -webkit-background-size: cover;
+            background-size:cover;
+            background-attachment: fixed;
+        }
+        .gnb{
+            height:100px; 
+            width:100%;
+            left:0;
+            top:0;
+            background-color:rgba(0,0,0,.5);
+            position:fixed;
+        }
+        .contents{width:1000px; height:2000px; background-color:rgba(255,255,255,.5); margin:120px auto 0;}
+    </style>
+    <script type="text/javascript">
+        
+        $(function(){
+            
+            $(window).scroll(function(){
+                
+                var sct = $(this).scrollTop()
+                
+                if(sct > $('.gnb').height() && !$('.gnb').is('.mini')){ //mini라는 클래스가 없으니까 실행하자마자 실행종료
+                    $('.gnb').animate({
+                        top:-100
+                    },1000,function(){
+                        // 에니메이션 종료후
+                        $(this).css({
+                            'bottom':'-100px',
+                            'top':'initial'
+                        }).animate({
+                            'bottom':0
+                        },1000,function(){
+                            $(this).animate({
+                                height:50
+                            })
+                        })
+                    })
+                    $('.gnb').addClass('mini');
+                    
+                }else if(sct < $('.gnb').height() && $('.gnb').is('.mini')){
+                    
+                    $('.gnb').removeClass('mini');
+                   
+                }
+                
+                
+                
+            })
+            
+            
+            
+        })
+        
+        
+    </script>
+    
+</head>
+<body>
+    
+    <div class="gnb"></div>
+    <div class="contents"></div>
+    
+    
+</body>
+</html>

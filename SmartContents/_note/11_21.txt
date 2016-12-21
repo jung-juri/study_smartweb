@@ -1,0 +1,27 @@
+http://webclub.tistory.com/17  --<조건 주석문 처리방식>--
+
+http://www.w3schools.com/cssref/css3_pr_transform.asp
+
+
+태그의 추가 사항
+
+HTM5 업데이트 사항
+
+95% 
+	javascript
+	video
+	canvers
+	media
+	audio
+
+	local storage
+	geolocation
+
+5%
+	header
+	aside
+	section
+	article
+	footer
+	nav
+	

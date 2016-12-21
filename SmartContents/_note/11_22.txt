@@ -1,0 +1,43 @@
+:root	최상위 선택자(html, body 보다 위에)
+
+
+http://www.w3schools.com/csSref/css3_pr_animation.asp (애니메이션 속성)
+http://www.w3schools.com/css/css3_animations.asp (애니메이션)
+
+유튜브 웹학교 (w3c 번역)
+
+https://www.udemy.com/courses/ (강좌, 유료,가끔무료)
+
+https://taegon.kim/archives/3667 (LASS 변수)
+
+
+SASS
+LESS (node 깔려있어야 됨)
+
+[-- less bash 명령어
+	npm install -g less
+	less
+	lessc style.less ../css/style/css
+	ls
+	lessc projectless/less/style.less projectless/css/style.css
+--]
+
+
+[-- 변환.
+@imgsplit-bg:'http://static.naver.net/newsstand/img/20140716/sp_nwstd.png';
+
+.bgpos(@x:0,@y:0,@bg)
+{
+	background-position: @x @y;
+	background-image:url(@bg);
+}
+
+
+div.a{.bgpos(100px 100px @imgsplit-bg)}
+
+	background-position:
+	background-image:url		(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png)
+
+div.b{.bgpos(200px 200px @imgsplit-bg)}
+div.c{.bgpos(100px 300px @imgsplit-bg)}
+--]

@@ -1,0 +1,15 @@
+/*init*/
+*{margin:0; padding:0;}
+ul{list-style:none;}
+
+
+/*tab*/
+.tab{ height:440px; width:500px; margin:50px auto;position:relative;}
+.tab li>a{height:40px; display:block; padding:0 10px;line-height:40px; }
+.tab li.on>a{color:#000; background-color:#FFF; position:relative; z-index:1;}
+.tab li{border:1px #CCC solid;  border-left:0; border-bottom:0;float:left;}
+.tab li:first-child{border-left:1px #CCC solid;}
+.tab div{padding:10px; border:1px #CCC solid; height:400px;position:absolute;width:100%;top:40px;left:0; z-index:0;}
+/*default tab*/
+.tab.style-default div{border-radius:0 0 20px 20px;}
+.tab.style-red div{border-radius:0 0 20px 20px; border-color:red;}

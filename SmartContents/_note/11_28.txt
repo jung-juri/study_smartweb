@@ -1,0 +1,14 @@
+무.조.건. 띄어쓰기 안하면 줄바꿈이 안되고 영역 밖으로 벗어남!!!
+
+텍스트 줄바꿈 처리 속성
+word-break: break-all;
+
+table-cell 속성은 기본적으로 vertical-align:middle; 값이 부여되어 있음
+
+
+text-transform (영문 텍스트 소문자, 대문자 설정 속성 값)
+
+vertical-align 은 inline,inline-block,table,table-cell 에 적용되는 결과가 다르다
+
+inline-block : inline의 행 나열이 되는 속성과, block의 w,h 값 조절되는 속성이 합쳐진것
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>전자신문_레이아웃dd</title>
+
+  <style>
+
+    .guide_line{
+      outline: 1px red solid;
+    }
+
+    .wrapper{
+      width: 900px;
+      height: 540px;
+      margin: 0 auto;
+    }
+
+    .heading{
+      margin: 0px 30px;
+      height: 58px;
+      padding-top: 20px;
+      padding-bottom: 33px;
+    }
+
+    .contents{
+      margin: 20px 30px 0;
+      height: 380px;
+    }
+
+    .contents>.left{
+      width: 513px;
+      height: 386px;
+      float: left;
+    }
+
+    .contents>.right{
+      margin-left: 533px;
+      height: 100%;
+    }
+
+    .contents>.left .up{
+      height: 132px;
+      margin-bottom: 10px;
+    }
+
+    .contents>.left>.down{
+      max-height: 238px;
+    }
+
+    .contents>.left>.down>.down_left{
+      width: 162px;
+      height: 240px;
+      float: left;
+    }
+
+    .contents>.left>.down>.down_right{
+      margin-left: 162px;
+      height: 244px;
+    }
+
+    .contents>.right .up{
+      height: 112px;
+      margin-bottom: 8px;
+    }
+
+    .contents>.right .down{
+      height: 255px;
+    }
+
+    .h3{
+      width: 260px;
+      height: 55px;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+
+  <div class="wrapper guide_line">
+      <div class="heading guide_line">
+          <div class="h3 guide_line"></div>
+      </div>
+
+      <div class="contents guide_line">
+
+          <div class="left guide_line">
+              <div class="up guide_line"></div>
+              <div class="down guide_line">
+                  <div class="down_left guide_line"></div>
+                  <div class="down_right guide_line"></div>
+              </div>
+          </div>
+
+          <div class="right guide_line">
+              <div class="up guide_line"></div>
+              <div class="down guide_line"></div>
+          </div>
+
+      </div>
+
+  </div>
+
+</body>
+</html>

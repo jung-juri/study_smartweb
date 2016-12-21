@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>layout</title>
+  <style>
+    .guide_line{
+      outline:1px #F00 solid;
+    }
+    .wrapper {
+      width:900px;
+      height:540px;
+      margin: 0 auto;
+    }
+    .heading{
+      height:110px;
+      margin:0 30px;
+    }
+  .contents{
+    margin:10px 30px 0;
+    height:380px;
+  }
+  .contents>.left{
+    width:513px;
+    height:100%;
+    float:left;
+  }
+  .contents>.left .up{
+    height:50%;
+  }
+  .contents>.left .down{
+    height:50%;
+  }
+  .contents>.right{
+    margin-left:524px;
+    height:100%;
+    background: #CCC;
+  }
+  .contents>.right .up{
+    height:50%;
+  }
+  .contents>.right .down{
+    height:50%;
+  }
+  </style>
+</head>
+<body>
+
+
+  <div class="wrapper guide_line">
+    <div class="heading guide_line">
+
+    </div>
+    <div class="contents guide_line">
+        <div class="left guide_line">
+            <div class="up guide_line"></div>
+            <div class="down guide_line"></div>
+
+        </div>
+        <div class="right guide_line">
+            <div class="up guide_line"></div>
+            <div class="down guide_line"></div>
+        </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+</html>

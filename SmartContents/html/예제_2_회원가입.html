@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>예제_2_회원가입_정주리</title>
+</head>
+<body>
+
+  <h1>개인회원 가입</h1>
+
+  <fieldset>
+    <legend>필수입력항목</legend>
+  <form action="예제_2_회원가입.html" method="post">
+    <ul>
+
+
+      <li>
+          <label>회원 아이디<input type="text" name="a" placeholder="아이디를 입력하세요" />
+          </label>
+          <input type="button" value="아이디 중복조회">
+          <span>(영문자 또는 숫자, 4~15자리)
+          </span>
+      </li>
+
+      <li>
+          <label>비밀번호<input type="password" name="b" placeholder="비밀번호를 입력하세요" />
+          </label>
+          <span>변경 시에만 입력하십시오. (영문자 또는 숫자, 4~12자리)
+          </span>
+      </li>
+
+      <li>
+
+          <label>비밀번호 확인<input type="password" name="c" />
+          </label>
+      </li>
+
+      <li>
+          <label>회원성명<input type="text" name="d" />
+          </label>
+          <span>(한글 8자이내, 영문 16자이내 입력)</span>
+      </li>
+
+      <li>
+          <label>주민등록번호<input type="text" name="e" /> - <input type="password" name="f" />
+          </label>
+      </li>
+
+      <li>
+          <label>전화번호
+                <select name="tel">
+                        <option>02</option>
+                        <option>031</option>
+                        <option>032</option>
+                        <option>070</option>
+                        <option>010</option>
+                </select>
+                 -
+                <input type="text" name="tel" />
+                 -
+                <input type="text" name="tel" />
+          </label>
+      </li>
+
+      <li>
+          <label>휴대폰번호
+                <select name="phon">
+                        <option>010</option>
+                        <option>011</option>
+                        <option>017</option>
+                        <option>018</option>
+                        <option>019</option>
+                </select>
+                 -
+                <input type="text" name="phon" />
+                 -
+                <input type="text" name="phon" />
+          </label>
+      </li>
+
+      <li>
+          <label>주 소
+          <input type="text" name="address" /> - <input type="text" name="address" /> <input type="button" value="우편번호 검색" /><br />
+          <input type="text" name="address" /><br />
+          <input type="text" name="address" /><br />
+          </label>
+      </li>
+
+      <li>
+          <label>E-mail
+                <input type="text" name="mail" />
+                  @
+                <select>
+                        <option>직접입력</option>
+                        <option>naver.com</option>
+                        <option>nate.com</option>
+                        <option>gmail.com</option>
+                        <option>hanmail.net</option>
+                </select>
+          </label>
+      </li>
+
+      <li>
+          <label>참조E-mail
+                <input type="text" name="mail2" />
+                  @
+                <select>
+                        <option>직접입력</option>
+                        <option>naver.com</option>
+                        <option>nate.com</option>
+                        <option>gmail.com</option>
+                        <option>hanmail.net</option>
+                </select>
+          </label>
+
+          <p>
+              ※ 참조 E-mail 이란?<br />
+              E-Mail 고지를 받는 고객께서 고지를 정상적으로 받으실 수 없을 경우 업무의 공백을 막기위한<br />
+              서비스로 참조 E-Mail을 등록해 놓으시면 매번 E-Mail 고지서에 등록하신 두개의 E-Mail로 고지해<br />
+              드립니다. <strong>단, 한국전력과 서울도시가스에만 해당됩니다.</strong>
+          </p>
+      </li>
+
+      <li>
+          <label>한빌 부가서비스 안내수신
+                <label>
+                <input type="radio" name="service" />예
+                </label>
+                <label>
+                <input type="radio" name="service" />아니오
+                </label>
+          </label>
+      </li>
+
+      <li>추천인 아이디
+          <input type="text" name="goodid" />
+      </li>
+
+    <input type="submit" value="확인" />
+    <input type="reset" value="재입력" />
+
+  </form>
+
+  </fieldset>
+
+
+
+  <select>
+    <option>선택</option>
+    <option value="www.naver.com">네이버</option>
+
+  </select>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script type="text/javascript">
+
+    
+        var card_deck = [];
+        var shape = ['스페이스','클로버','하트','다이아'];
+        var users = [];
+        var randoms = Math.floor(Math.random(card_deck) * card_deck.length);
+        
+        
+        function cardmake(){
+            card_deck=[]; //배열 초기화
+                for(var i=0;i<shape.length;i++){
+                    for (var j=1; j<=13; j++){
+                        card_deck.push(shape[i]+j);
+                    }
+                }
+                console.log(card_deck)
+                console.log(users)
+                
+        }
+        
+        
+        
+        function ran(){
+            console.log(randoms)
+        }
+        
+        function starts(){
+            for (var i=0; i<3; i++){
+            users.unshift(card_deck[randoms]);
+            card_deck.splice(randoms,1);
+            }
+            console.log(users);
+        }
+        
+        function call(){
+            users.push(card_deck[randoms]);
+            card_deck.splice(randoms,1);
+            console.log(users);
+        }
+        
+        // function die(){
+        //     console.log('die');
+        // }
+        
+    </script>
+</head>
+<body>
+
+    <button type="button" onclick="cardmake()">카드생성</button>
+    <button type="button" onclick="starts()">게임시작</button>
+    <button type="button" onclick="call()">콜</button>
+    <button type="button" onclick="ran()">랜덤뽑기</button>
+    <!--<button type="button" onclick="die()">다이</button>-->
+    
+</body>
+</html>

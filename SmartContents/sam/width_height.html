@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>box모델</title>
+  <style>
+/*
+  min-width = 최소넓이
+  width = 넓이
+  max-width = 최대넓이
+  min-height
+  height = 높이
+  max-height
+  margin
+  margin-top
+  margin-right
+  margin-bottom
+  margin-left
+  padding
+  padding-top
+  padding-right
+  padding-bottom
+  padding-left
+  border
+  border-width
+  border-style
+  border-color*/
+*{
+  margin:0;padding:0;
+  list-style: none;
+}
+  #box {
+    height:100px;
+    /*컨텐츠만큼*/
+    border:1px red solid;
+  }
+body{
+  margin:0;
+}
+#menu{
+  width:150px;
+  border:1px #F00 solid;
+}
+#menu ul{
+  border:1px #F00 solid;
+  width:auto;
+  /*부모만큼*/
+  margin: 10px
+}
+#box{
+width:200px;
+margin-left:auto;
+margin-right:auto;
+border:1px #F00 solid;
+}
+#children{
+  height:200px; background:#00F; border:1px #F00 solid
+}
+  </style>
+</head>
+<body>
+
+<div id="box">
+  <div id="children"></div>
+</div>
+
+
+
+<!-- <div id="menu">
+  <ul>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+  </ul>
+</div> -->
+
+
+
+
+
+</body>
+</html>

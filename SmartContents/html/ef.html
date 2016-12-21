@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+    
+        /*
+         a{
+            display:inline-block; 
+            border:1px #F00 solid; 
+            width:200px; 
+            height:100px; 
+            text-align:center; 
+            font-size:50px;
+            text-decoration: none;
+            color:#000;
+            line-height: 100px;
+            transition:1000ms;
+        }
+        
+        a:hover{
+            background-color:#F00;
+            color:#FFF;
+            border-radius:10px;
+        }
+        
+        
+        .box1{
+            width:100px; 
+            height:100px; 
+            border:1px #F00 solid;
+            
+            position:relative;
+            font-size:100px;
+        }
+        .box1:hover{
+            animation: myani 3s;
+        }
+        
+        @keyframes myani {
+            0%{left:0; top:0;}
+            20%{left:500px; top:0; transform:rotate(100deg)}
+            50%{left:500px; top:200px; transform:rotateX(100deg)}
+            70%{left:0; top:700px;transform:skew(2,2)}
+            100%{left:0; top:0;}
+            
+        */
+            
+            
+        *{margin: 0; padding: 0;}
+        
+        
+        
+        .wrap{width: 500px; height: 500px; border:1px red solid; position:relative;}
+        
+        [class^="box"] { border:1px red solid; position:absolute}
+        
+        .box1{height: 100px; width: 100px; top:10px; left:10px; }
+        .box2{height: 200px; width: 100px; top:120px; left:10px;}
+        .box3{width: 100px; top:330px; left:10px; bottom: 10px;}
+        .box4{top:10px; left:120px; bottom: 10px; right: 10px;}
+        
+        .box1:hover{animation: myani1 2s;}
+        .box2:hover{animation: myani2 3s;}
+        .box3:hover{animation: myani3 4s;}
+        .box4:hover{animation: myani4 2s;}
+        
+        @keyframes myani1 {
+            0%{left:0; top:0;}
+            20%{left:500px; top:0; transform:rotate(100deg)}
+            50%{left:500px; top:200px; transform:rotateX(100deg)}
+            70%{left:0; top:700px;transform:skew(2,2)}
+            100%{top:10px; left:10px;}
+            
+        }
+            
+        @keyframes myani2 {
+            0%{left:0; top:0;}
+            20%{left:500px; top:0; transform:rotate(100deg)}
+            50%{left:500px; top:200px; transform:rotateX(100deg)}
+            70%{left:500px; top:500px;transform:scale(3,3)}
+            100%{top:120px; left:10px;}
+            
+        }
+            
+        @keyframes myani3 {
+            0%{left:0; top:0;}
+            20%{left:100px; top:0; transform:rotate(100deg)}
+            50%{left:100px; top:100px; transform:rotateX(200deg)}
+            70%{left:700px; top:0;transform:skew(15,15)}
+            100%{top:330px; left:10px; bottom: 10px;}
+            
+        }
+        
+        @keyframes myani4 {
+            0%{left:0; top:0;}
+            20%{left:500px; top:0; transform:rotate(100deg)}
+            50%{left:500px; top:200px; transform:rotateX(100deg)}
+            70%{left:0; top:700px;transform:skew(2,2)}
+            100%{top:10px; left:120px; bottom: 10px; right: 10px;}
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+<div >
+    <div class="wrap">
+   <div class="box1"></div>
+   <div class="box2"></div>
+   <div class="box3"></div>
+   <div class="box4"></div>
+    </div>
+</div>
+    
+    
+    
+    
+    
+</body>
+</html>

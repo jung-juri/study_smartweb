@@ -1,0 +1,47 @@
+
+		1. 공중에 붕뜨다
+		2. 플룻이 선언된 엘리먼트는 컨텐츠가 피해간다
+		3. 플룻이 선언된 엘리먼트는 먼저 작성된 엘리먼트보다 위로 뜰 수 없다.
+
+		width:auto
+		height:auto
+
+		overflow:hidden 넘은걸 숨겨줌
+			visible 넘어가도 보여줌
+			scroll 
+			세로스크롤: overflow-y:scroll
+
+
+		display - inline - span, strong, em 글씨를 꾸미는 
+			block - div, p, h1 레이아웃 잡는
+			inline-block - button, input
+			table - 표
+			table-cell - 표의 칸
+			list-item - ul, li, ol
+
+
+inline요소, block요소 알아오기
+
+
+*선택자*
+
+, : 여러가지 요소 선택할 때
+. : class
+# : id
+띄어쓰기 : 자식요소 선택
+> : 요소 바로 안에있는 요소만
+
+띄어쓰면 자식요소, 붙여쓰면 한 클래스에 중복되는 이름 선택
+
+^시작 *포함된모든것 $끝나면  중요!!!
+
+
+
+
+*캐스케이딩*
+
+저작자
+명시도
+우선순
+
+tag<class<id

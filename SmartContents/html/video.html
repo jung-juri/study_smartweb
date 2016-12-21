@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--http://jsbin.com/labinezewu/1/edit?css,output-->
+    <style>
+        *{margin:0; padding:0;}
+        body,html{height:100%;}
+        
+        .intro{position:relative; border:1px #F00 solid; height:100%; overflow:hidden;}
+        .intro>video{ width:1920px; position:relative; left:50%; margin-left:calc( -1 * 1920px / 2);}
+        .wrap{position:absolute; top:0; left:0; border:1px #00F solid; width:100%;
+            color:#FFF;
+            text-align:center;
+            display:table;
+            height:100%;
+         }
+         
+         h1{
+             display:table-cell;
+             vertical-align: middle;
+             border:1px #F00 solid;
+         }
+         
+        .box{position:absolute; width:500px; height:500px; background-color:rgba(0,0,0,.8);
+            right:-250px;
+            bottom:-250px;
+            transform:rotate(45deg);
+            transition:1s;
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+    <div class="intro">
+        <video width="100%" autoplay loop>
+          <source src="../video/Cute Cat - 3092.mp4" type="video/mp4">
+        </video>
+        <div class="box"></div>
+        <div class="wrap">
+            <h1>Hello cat<br/> Rinse</h1>
+        </div>
+    </div>
+</body>
+</html>

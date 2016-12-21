@@ -1,0 +1,13 @@
+리턴값 없는것 = 보이드함수
+
+
+for문의 var는 원래 임의, * i < j < k 무언의 정의! *
+for in문
+예시1)for(var i=0 in card.shape)
+예시2)for(var i=0 in this.shape) card안에서만! this
+
+
+1. 카드정리 : 카드배열하기
+2. 게임시작 : 카드세장나눠주기
+3. 콜	  : 한장씩 더 받기
+4. 다이	  : 모두 리셋, 카드정리

@@ -1,0 +1,10 @@
+css 상속 속성
+
+
+initial : 상속 안받음
+inherit : 상속 받음
+
+
+git 저장소
+
+

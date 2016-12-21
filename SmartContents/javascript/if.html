@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script type="text/javascript">
+      // if(true){실행구문}
+
+      // if(!true){console.log('false')}
+      // if(!false){console.log('false')}
+
+      // a = 'abc'
+      // if(!a != 'abc'){console.log('false')}
+
+      //예시
+// var text = prompt('문자 또는 숫자를 입력하세요.');
+// else if(text == "a"){
+//     console.log('a')
+// }
+// if(text == "b"){
+//     console.log('b')
+// }
+// if(text == "c"){
+//     console.log('c')
+// }
+
+
+
+// var text = prompt('문자 또는 숫자를 입력하세요.')
+// if(text == 'a'){console.log('a');}
+// else if(text == 'b'){console.log('b');}
+// else if(text == 'c'){console.log('c');}
+// else(console.log('헐스'))
+
+
+// 홀 짝 게임!
+// var text = prompt('숫자를 입력하세요.')
+// var msg = text%2
+// console.log(msg)
+// if(msg == '0'){console.log('짝');}
+// else if(msg == '1'){console.log('홀');} //else ?? 앞의 if 결과 이외의 값.
+// else{console.log('잘못 입력하였습니다. 다시 입력하세요')}
+
+
+
+// up & down game!
+var num = prompt('게임을 시작합니댜. 지정할 최대값을 입력하세요');
+console.log('최대값입력:'+num)
+var numscop  = num;
+console.log('지정된최대값:'+numscop);
+var rannum = Math.floor(Math.random() * numscop);
+console.log('랜덤지정값:'+rannum);
+var count = prompt('몇번 풀어볼거야?');
+console.log('풀어볼횟수:'+count+"번");
+
+for(i = 0; i < count; i++){
+
+      var start = prompt('정답을 입력해보아요');
+
+          console.log('입력한정답:'+start);
+
+        // if(!number){
+        //     alert('잘못 입력하셨습니다. 0~'+numscop+" 사이의 숫자만 입력하세요.");
+        //     console.log('오류코드2:잘못된 문자 입력');
+        // }
+
+        if('end'){
+          alert('다음에 또 만나요^^*');
+          console.log('end');
+          break;
+        }
+        else if(numscop < start){
+            alert('최대값은 '+"'"+numscop+"'"+" 입니다. 다시 입력하세요")
+            console.log('오류코드1:최대값 초과 입력')
+        }
+        else if(rannum > start){
+          alert('틀렸어요! '+"'"+start+"'"+' 보다 높아요.');
+          console.log('오답');
+        }
+        else if(rannum < start){
+          alert('틀렸어요! '+"'"+start+"'"+' 보다 낮아요.');
+          console.log('오답');
+        }
+        else if(rannum == start){
+          alert('정답입니다! 축하드려요^.^');
+          console.log('정답');
+          break;
+        }
+
+
+
+}
+
+
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

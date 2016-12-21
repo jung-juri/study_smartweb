@@ -1,0 +1,14 @@
+@media 에서
+min은 > (값 이상)
+max는 < (값 이하)
+
+
+
+
+*벤더프리픽스*
+
+-webkit-	background-size:cover	// 크롬,사파리
+-moz-	background-size:cover	// 파폭
+-o-	background-size:cover	// 오페라
+-ms-	background-size:cover	// IE
+	background-size:cover	// 표준

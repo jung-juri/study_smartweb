@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        
+        var user;
+        var carddeck = [];
+        var cardmodel=['♠','♣','♥','◆'];
+        var users = [];
+        
+        function cardselector(){
+            
+            var rcard = Math.floor(Math.random()*carddeck.length);
+            users.unshift(carddeck[rcard]);
+            carddeck.splice(rcard,1);
+        }
+        
+        function adduser(){
+            user = prompt('사용자 이름을 입력하세요')
+        }
+        
+        
+        
+        
+        function cardmake(){
+            carddeck=[]; //배열 초기화
+            for(i=0;i<4;i++){
+                for(j=1;j<=13;j++){
+                    
+                    /*
+                    switch(j){
+                        case 1 :
+                             cardeck.push(cardModel[i]+"A");
+                             break;
+                        case 11 :
+                             cardeck.push(cardModel[i]+"J");
+                             break;
+                        case 12 :
+                             cardeck.push(cardModel[i]+"Q");
+                             break;
+                        case 13 :
+                             cardeck.push(cardModel[i]+"K");
+                             break;
+                        default:
+                             cardeck.push(cardModel[i]+j);
+                             break;
+                    }
+                    */
+                    
+                    // if(j == 1)carddeck.push(cardmodel[i]+"A");
+                    // else if(j==11)carddeck.push(cardmodel[i]+"J");
+                    // else if(j==12)carddeck.push(cardmodel[i]+"Q");
+                    // else if(j==13)carddeck.push(cardmodel[i]+"K");
+                    // else 
+                    carddeck.push(cardmodel[i]+j);
+                }
+            }
+        }
+        
+        function checkvalue(){
+            
+            console.log('현재등록된 사용자수:'+user);
+            console.log(carddeck);
+            console.log(users);
+           
+        }
+        
+         
+        
+    </script>
+</head>
+<body>
+    
+    <button type="button" onclick="adduser()">게임참여자 입력</button>
+    <button type="button" onclick="cardmake()">카드생성</button>
+    <button type="button" onclick="checkvalue()">카드확인</button>
+    <button type="button" onclick="cardselector()">카드나눠주기</button>
+    
+</body>
+</html>

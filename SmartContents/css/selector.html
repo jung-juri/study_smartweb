@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>selectors</title>
+
+  <style>
+
+    /*div,ul,li{border: 1px red solid;}*/
+    /*.menu{border:1px red solid;}*/
+    /*.menu>ul{border:1px red solid;}*/
+    /*.menu ul.subul {border:1px red solid;}*/
+
+    /*.menu li li:first-child{border:1px red solid;} 익스 7,8,9*/
+    /*.menu li li:last-child{border:1px red solid;} 익스 8,9*/
+
+    /*li input[type="text"]{border:1px red solid;} 속성 선택자 */
+
+    /* ^시작 *포함된모든것 $끝나면 기억 !! 중요 !! */
+    /*a[href="네이버"]{border: 1px red solid;}
+    a[href^="네"]{border: 1px red solid;}
+    a[href*="이"]{border: 1px red solid;}
+    a[href$="이버"]{border: 1px red solid;}*/
+
+    /*.unit+li{border: 1px red solid;} + 다음요소*/
+
+    /*.unit~li{border: 1px red solid;} unit클래스 다음 모든 li(중간에 다른 태그가 있다면 그것만 제외!!)*/
+
+
+
+  /*쌤~~~~이작성한거~~~~~~~~~~~*/
+/*  /*div{border:1px #F00 solid;}*/ /*<div> 만 선택*/
+  /*div,ul,li{border:1px #F00 solid;}*/ /*<div>,<ul>,<li> 모두*/
+  /*.menu {border:1px #F00 solid}*/ /*"menu" 라는 클래스 모두*/
+  /*#unit1{border:1px #F00 solid}*/ /*"unit1" 이라는 아이디 모두*/
+  /*.menu li {border:1px #F00 solid;}*/ /*"meun" 클래스 들의 <li> 모두*/
+  /*.menu>ul>li{border:1px #F00 solid;}*/ /*"menu" 클래스 안의 <ul> 안의 <li> 만*/
+  /*.menu .testul>li{border:1px #F00 solid;}*/ /*"menu" 클래스 중에 "testul" 이라는 클래스 이름을 이중으로 <li class="menu testul">가지고 있는 클래스 들의 안에 있는 "li"만*/
+  /*.menu ul.subul {border:1px #F00 solid;}*/ /*"menu" 클래스 모두의 <ul class="subul">만*/
+  /*ul.subul.list-item{border:1px #F00 solid;}*/ /*<ul class="subul list-item">만*/
+  /*.menu li li:first-child{border:1px #F00 solid}*/ /*"menu" 모두의 <li> 중에 첫번째 <li>만*/
+  /*.menu li li:last-child{border:1px #F00 solid}*/ /*"menu" 모두의 <li> 중에 마지막 <li>만*/
+  /*li input[type="button"]{border:1px #F00 solid}*/ /*<li> 모두의 <input> 요소 중 "button" 타입 ([type=button]) 만*/
+  /*a[href="라이코스"]{border:1px #F00 solid}*/ /*<a>요소 중 "라이코스" 링크 ([href="라이코스"]) 만*/
+    /*
+    ^ = 시작하면
+    * = 포함되어있으면
+    $ = 끝나면
+     */
+  /*
+  a[href*="이코"]{border:1px #F00 solid} <a>요소의 링크 중에 "이코"가 포함된 태그 모두
+  a[href^="라이"]{border:1px #F00 solid} <a>요소의 링크 중에 "라이"로 시작되는 태그 모두
+  a[href$="코스"]{border:1px #F00 solid} <a>요소의 링크 중에 "코스"로 끝나는 태그 모두
+  */
+  /*.unit+li+li{border:1px #F00 solid}*/ /*"unit" 클래스 바로 다음에 오는 <li> 의 바로 다음 오는 <li>만.*/
+  /*.unit~p{border:1px #F00 solid}*/
+
+
+  </style>
+
+</head>
+<body>
+
+
+  <p>text</p>
+   <p>text</p>
+   <p>text</p>
+   <p class="unit"></p>
+   <p>text</p>
+   <p>text</p>
+   <p>text</p>
+   <div>text</div>
+   <p>text</p>
+   <p>text</p>
+
+
+
+ <div class="menu">
+   <ul class="first-ul">
+     <li>text1
+       <ul class="subul">
+         <li>text1-1</li>
+         <li>text2-2</li>
+         <li class="unit">unit</li>
+         <li>text1-1</li>
+         <li>text2-2</li>
+         <li>text3-3</li>
+       </ul>
+     </li>
+     <li>text2
+       <ul class="subul list-item">
+         <li><input type="text"></li>
+         <li><input type="button"></li>
+         <li><a href="네이버">text3-3</a></li>
+       </ul>
+     </li>
+     <li><a href="라이코스">text3</a>
+       <ul class="testul">
+         <li><input type="text"></li>
+         <li id="unit">text2-2</li>
+         <li>text3-3
+           <ul class="testul1">
+             <li><input type="text1"></li>
+             <li id="unit1">text2-2</li>
+             <li>text3-3</li>
+             <li><input type="text1"></li>
+             <li id="unit2">text2-2</li>
+             <li>text3-3</li>
+           </ul>
+         </li>
+       </ul>
+     </li>
+   </ul>
+ </div>
+
+
+
+
+
+</body>
+</html>

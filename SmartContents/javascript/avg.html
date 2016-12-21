@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>학생 성적 평균내기</title>
+  <script type="text/javascript">
+
+
+  var nameArr = [];
+  var scoreArr = [];
+  var scores = [];
+
+  var study = prompt('몇학년입니까?')
+  var studyroom = prompt('몇반입니까?')
+
+  var max_user = prompt('	학생의 수를 입력해주세요');
+  var check = confirm(max_user+"인원이 맞습니까?")
+
+  if(check){
+
+      for(var i=0;i<max_user;i++){
+          var name = prompt('이름을입력하세요');
+          var score = prompt('점수를입력하세요');
+          nameArr.unshift(name);
+          scoreArr.unshift(score+"점");
+          scores.unshift(score);
+      }
+
+      document.write(
+        study + "학년 " + studyroom + "반,  "+ "총 인원 " + max_user + "명 <br />" +
+        "이름: "+ nameArr + "<br />" +
+        "점수: "+ scoreArr + "<br />"
+      );
+      var nexts = confirm('입력정보가 맞습니까?');
+
+      if(nexts){
+          confirm('반 전체 평균을 산출합니다.');
+          var score = 0;
+
+          for(var i = 0 in scoreArr){
+              score += Number(scores[i]);
+
+          }
+          var sss = Math.floor(score/max_user);
+
+
+          document.write('반 전체 평균 점수는 '+sss+'점입니다.<br />')
+
+          if(sss >= 0 && sss < 20){
+                document.write('반 전체 평균 등급은 "가"입니다<br />')
+          }else if(sss >= 20 && sss < 40){
+                document.write('반 전체 평균 등급은 "양"입니다<br />')
+          }else if(sss >= 40 && sss < 60){
+                document.write('반 전체 평균 등급은 "미"입니다<br />')
+          }else if(sss >= 60 && sss < 80){
+                document.write('반 전체 평균 등급은 "우"입니다<br />')
+          }else if(sss >= 80 && sss <= 100){
+                document.write('반 전체 평균 등급은 "수"입니다<br />')
+          }
+
+
+
+      }else if(!nexts){
+          alert('프로그램을 종료합니다')
+      }
+
+
+
+      console.log(nameArr,scoreArr)
+
+
+
+
+  }else if(!check){
+      console.log('re');
+  }
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

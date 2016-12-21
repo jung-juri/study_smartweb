@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+    
+        var card = {
+            card_number:13,
+            card_deck:[],
+            shape:['♠','♣','♥','◆'],
+            theorem:function(){
+                card_deck=[];
+                for(var i=0 in this.shape){
+                    console.log(i)
+                    for (var j=1; j<=this.card_number; j++){
+                        card_deck.push([]);
+                        console.log(j)
+                        // if(j==1)card_deck.push(shape[i]+)
+                    } 
+                }
+            },
+            check:function(){
+                console.log(card_deck)
+             }
+        }
+        
+    </script>
+</head>
+<body>
+    
+    <button type="button" onclick="card.theorem()">생성</button>
+    <button type="button" onclick="card.check()">카드확인</button>
+    
+</body>
+</html>

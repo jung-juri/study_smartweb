@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+.wrap{
+  width: 900px;
+  height: 540px;
+  border:1px #F00 dotted;
+}
+.left{width: 60%; height:100%; outline: 2px #00f solid;float:left}
+.right{width: 40%; height:100%; outline: 2px #F00 solid; margin-left:60%;}
+.sub-box1{ width: 50%;  height:100%; outline: 2px #F00 solid; float:left; }
+.sub-box2{width: 50%;  height:100%; outline: 2px #F00 solid; margin-left:50%;}
+[class^="top"]{border:1px #F00 solid; height:100px;}
+.top-left{width:200px; float:left;}
+.top-center{margin:0 210px}
+.top-right{width:200px; float:right;}
+.foo_1{
+  width: 200px;
+  float:left;
+  height: 200px;
+  border:1px #F00 solid;
+}
+.foo_2{
+  height:300px;
+  border:1px #F00 solid;
+  overflow:hidden;
+  margin-left:210px;
+}
+ul{margin:0; padding:0; list-style: none;}
+.grid-list{border:1px #F00 solid; width:540px; overflow:hidden; }
+.grid-list ul{border:1px #F00 solid; width:110%;}
+.grid-list li{border:1px #F00 solid; width:98px; height:100px; float:left; margin-right:10px; margin-bottom:10px}
+  </style>
+</head>
+<body>
+  <h1>grid list</h1>
+  <hr/>
+  <div class="grid-list">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+
+    </ul>
+  </div>
+
+
+
+
+  <h1>float / overflow</h1>
+
+  <div class="foo_1"></div>
+  <div class="foo_2">쓸 수 있는 다언어판 인터넷 백과사전이다. 대표적인 집단 지성의 사례로 평가받고 있다. 위키백과는 크리에이티브 커먼즈 라이선스(CCL)와 GNU 자유 문서(GFDL)의 2중 라이선스를 따른다. 배타적인 저작권 라이선스가 아닌 자유 콘텐츠로 사용에 제약을 받지 않는다.
+
+2001년 1월 15일에 시작된 위키백과는 비영리 단체인 위키미디어 재단에서 운영하고 있다. 2016년 5월 기준으로 영어판 515만여 개, 한국어판 365,030개를 비롯하여 290여 언어판을 합하면 39백만여 개의 글이 수록되어 있으며 꾸준히 성장하고 있다.
+위키백과 영어판은 전문가들이 작성했던 백과사전인 누피디어(지금은 없어짐)를 보완하여 2001년 1월 15일에 만들어졌다. 지미 웨일스와 래리 생어는 2001년에 위키백과의 공동창업자로 인정받았다.</div>
+
+
+
+
+<hr>
+
+
+<h1>3단겹침 float 레이아웃</h1>
+
+<div class="top-left">1</div>
+<div class="top-right">3</div>
+
+<div class="top-center">2</div>
+
+
+
+
+
+<hr />
+<h1>2단겹침 float 레이아웃</h1>
+
+  <div class="wrap">
+    <div class="left">
+      <div class="sub-box1">1</div>
+      <div class="sub-box2">2</div>
+
+    </div>
+    <div class="right">rigt</div>
+  </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

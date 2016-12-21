@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>display</title>
+
+  <style>
+
+  ul{
+    margin: 0; padding: 0;
+    list-style: none;
+    font-size: 0;
+
+  }
+
+  li{
+    border: 1px red solid;
+    font-size: 12px;
+    width:50px;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+  }
+
+  /*
+  *=핵
+  *zoom:1; = +-버튼에 주로 사용됨.
+  */
+
+  /*
+  li{
+    border: 1px red solid;
+    font-size: 12px;
+    width:50px;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+  }
+    익스플로러 7에서 호환되기 위해 *태그를 넣음 
+  */
+  </style>
+
+
+</head>
+<body>
+
+  <ul>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+  </ul>
+
+</body>
+</html>

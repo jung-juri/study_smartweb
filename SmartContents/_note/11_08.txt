@@ -1,0 +1,7 @@
+포지션의 부모는 먼저 포지션이 선언된 엘리먼트(fixed제외)
+
+앱솔루트 가운데 정렬 하는방법
+
+<a href="http://koreajoongangdaily.joins.com/news/article/article.aspx?aid=3025851" target="_blank">At Home with Her Excellency, Norway</a>
+
+url(http://static.naver.net/newsstand/img/20121231/bg_panel.png) 50% 0 no-repeat

@@ -1,0 +1,4 @@
+
+
+		git remote : 서버등록 확인
+		git clone 주소 : 

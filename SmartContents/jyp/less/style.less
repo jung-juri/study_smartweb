@@ -1,0 +1,142 @@
+
+
+body,h1,h2,h3,h4,h5,ul,ol,dl{margin: 0; padding: 0;}
+html,body{height: 100%;}
+ul,ol,dl{list-style: none;}
+a{text-decoration: none;}
+
+body{
+    background-image: url(@pcBg);
+    background-repeat: no-repeat;
+    .bgsize(cover);
+    background-position:center 0;
+}
+
+header {
+  position:relative;
+  z-index: 1px;
+  height: 100px;
+  padding: 0 20px;
+  background-color:rgba(255,255,255,.53);
+  // overflow: hidden;
+  box-shadow: 0 1px 7px rgba(0,0,0,0.4);
+    h1{
+        a{
+              display: block;
+              width: 104px; height: 52px; padding: 25px;
+              background-image: url(@logo);
+              background-repeat: no-repeat;
+              background-position: center;
+              overflow: hidden;
+              float: left;
+              transition: 1s;
+              text-indent: -9999px;
+              text-size:0; /*익스플로러 호환 문제 때문에 indent와 항상 같이 써줘야함.*/
+              &:hover{transform: rotatey(180deg);}
+            }
+
+        }
+
+
+  nav{
+    position:relative;
+    left: 20px;
+    float: right;
+    .menu{
+      display: none;
+      height:55px;
+      width:200px;
+      background-color:@t-col;
+      line-height: 55px;
+      text-align: center;
+      color:#FFF;
+      position:relative;
+      transition: 1s;
+
+    }
+
+
+  ul{z-index:4;
+    li{
+      transition: 1s;
+      float: left;
+      height:100px;  /*익스플로러 하위 버전에서는 부모의 영향을 받지 않아서 넣어줘야함*/
+      line-height: 100px;
+      &:hover{background-color:rgba(255,255,255,.7);}
+          a{
+          padding: 0 18px;
+          color:@t-col;
+          text-decoration: none;
+          font-size: 16px;
+          display: block; /*크기를 상속 받으려고 ????*/
+          transition: .1s;
+          &:hover{border-top: 3px @t-col solid; color:@b-col;}
+          }
+        }
+      }
+    }
+}
+
+
+section{
+    border:1px #F00 sold;
+    .biglogo{
+        width: 320px;
+        height: 320px;
+        background-image: url(@biglogo);
+        background-size: 100%;
+        position:absolute;
+        left:60%;
+        top:50%;
+        transition:1s;
+        z-index:2;
+        &:hover{
+            transform:scale(1.3);
+            opacity:0;
+          }
+        }
+
+
+}
+
+footer{
+  width: 100%;
+  height: 57px;
+  position: fixed;
+  bottom:0;
+  background-color: rgba(0,0,0,.53);
+  h2 {
+  a{
+    position: relative;
+    left: 7%;
+    top: 5px;
+    text-indent: -9999px;
+    width: 115px;
+    height: 45px;
+    float: left;
+    background: url("http://wondergirls.jype.com/images/jyplogo-b.png") no-repeat;}
+  }
+
+
+
+  ul{float: right;
+    position: relative;
+    top: 15px;
+    right: 5%;
+  li{
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255,255,255,.8);
+    border-radius: 5px;
+    margin-right: 10px;
+    line-height: 30px;
+    text-align: center;
+          a{
+            display: inline-block;
+            color:rgb(0,0,0);
+            vertical-align: top;
+          }
+    }
+  }
+}

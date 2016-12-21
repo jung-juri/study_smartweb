@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>입력폼</title>
+</head>
+<body>
+
+<p>
+    <!-- 한줄 입력란 -->
+    <label for="idd">아이디</label>
+    <input type="text" id="idd" placeholder="아이디를 입력하세요"/> <!--IE8,7,6에서는 javascript로-->
+</p>
+<p>
+    <!-- 비밀번호 -->
+    <label for="pass">비밀번호</label>
+    <input type="password" id="pass" placeholder="비밀번호를 입력하세요" />
+</p>
+<p>
+    <!-- 단일선택버튼 -->
+    <label for="button1">단일선택버튼</label>
+    <input type="radio" id="button1" />
+</p>
+<p>
+    <!-- 다중선택버튼 -->
+    <label for="button2">다중선택버튼</label>
+    <input type="checkbox" id="button2" />
+</p>
+<p>
+    <!-- 범용버튼 -->
+    <label for="button3">범용버튼</label>
+    <input type="button" id="button3" value="확인" />
+</p>
+<p>
+    <!-- 리셋버튼 -->
+    <label for="button4">리셋버튼</label>
+    <input type="reset" id="button4" value="초기화" />
+</p>
+<p>
+    <!-- 전송버튼 -->
+    <label for="button5">전송버튼</label>
+    <input type="submit" id="button5" value="전송" />
+<p>
+</p>
+    <!-- 파일선택버튼 -->
+    <label for="button6">파일선택버튼</label>
+    <input type="file" id="button6" />
+<p>
+    <!-- 버튼 -->
+    <input type="hidden" id="" />
+</p>
+
+<p>
+<label>성별
+  <label for="man">남자</label>
+  <input type="radio" id="man" name="trans" >
+  <label for="woman">여자</label>
+  <input type="radio" id="woman" name="trans" >
+</label>
+</p>
+
+<p>
+  <label>취미
+    <label for="sports1">농구</label>
+    <input type="checkbox" id="sports1" >
+    <label for="sports2">야구</label>
+    <input type="checkbox" id="sports2" >
+    <label for="sports3">배구</label>
+    <input type="checkbox" id="sports3" >
+  </label>
+</p>
+
+<label for="mail">이메일</label>
+<select id="mail">
+        <option>gmail.com</option>
+        <option>hanmail.net</option>
+        <option>naver.com</option>
+        <option>nate.com</option>
+</select>
+
+<p>
+<label>내용
+      <textarea rows="8" cols="40" placeholder="내용을 입력하세요" ></textarea>  <!-- rows=줄 수, cols=한줄 입력가능수 -->
+</label>
+</p>
+
+</body>
+</html>

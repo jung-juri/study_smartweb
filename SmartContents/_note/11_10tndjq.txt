@@ -1,0 +1,23 @@
+*셀 병합
+
+colspan="값" 옆칸 병합
+rowspan="값" 아래칸 병합
+
+
+
+*읽는 방향..
+scope(th에만가능)
+
+scope="col" →
+scope="row" ↓
+scope="colgroup"
+
+
+
+★공부하좌★
+
+ - colgroup
+
+ - summary
+
+label에 for과 id를 꼭 넣어서 주인을 찾아주자

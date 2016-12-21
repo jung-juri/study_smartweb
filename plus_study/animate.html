@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style type="text/css">
+        .box{position:absolute; width:100px; height:100px; border:1px #F00 solid;}
+    </style>
+    <script>
+        $(function(){
+              
+        var a = 0
+            var abc = setInterval(function(){
+                a +=1; 
+                // a=a+1 , a++ 
+                $('.box').css('left',a)  
+                
+                if(a == 100){
+                    clearInterval(abc)
+                }
+                
+                
+            },10)
+            
+            
+        })
+        
+        
+    </script>
+    
+    
+    
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>

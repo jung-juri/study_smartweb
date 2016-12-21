@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: #f00;
+}
+.menu {
+  border: 1px #F00 solid;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.menu ul li {
+  border: 1px #F00 solid;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+}
+.menu ul li:hover {
+  color: #F00;
+  cursor: pointer;
+}
+.menu ul li:first-child {
+  font-weight: bold;
+}

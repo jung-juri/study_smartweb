@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+
+            /*
+            position
+                static:;
+                relative
+                absolute
+                fixed
+
+            top
+            left
+            right
+            bottom
+
+            z-index
+            */
+    /*absolute*/
+    .relbox1{
+        border:1px #F00 solid;
+        position:absolute;
+        left:0;
+        top:0;
+        right:50%;
+        bottom:50%;
+
+
+    }
+    .relbox2{
+        border:1px #F00 solid;
+        position:absolute;
+        left:50%;
+        top:0;
+        right:0;
+        bottom:50%;
+
+
+    }
+    .relbox3{
+        border:1px #F00 solid;
+        position:absolute;
+        left:0;
+        top:50%;
+        right:50%;
+        bottom:0;
+
+
+    }
+    .relbox4{
+        border:1px #F00 solid;
+        position:absolute;
+        left:50%;
+        top:50%;
+        right:0;
+        bottom:0;
+    }
+    /*fixed는 w,h 값을 꼭 정해줘야됨*/
+    .fixed{
+        width:120px;
+        height:300px;
+        border:1px #F00 solid;
+        position:fixed;
+        left:510px;
+    }
+
+    .wrapper{
+        border:1px #F00 solid;
+        width:500px;
+        height:2000px;
+    }
+
+    </style>
+</head>
+<body>
+    <!--fixed-->
+    <div class="fixed">cart</div>
+    <div class="wrapper">
+
+
+    </div>
+
+
+    <!--<div class="relbox1">sdfsdf</div>-->
+    <!--<div class="relbox2">sdfsdf</div>-->
+    <!--<div class="relbox3">sdfsdf</div>-->
+    <!--<div class="relbox4">sdfsdf</div>-->
+
+
+
+</body>
+</html>

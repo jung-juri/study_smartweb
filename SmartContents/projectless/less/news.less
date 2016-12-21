@@ -1,0 +1,56 @@
+//주석
+
+
+*{margin:0; padding:0;}
+ul,ol{list-style:none;}
+
+
+.wrap{
+    .wh(900px,540px);
+    margin: 50px auto;
+    .border();
+    .top{
+        margin: 0 30px 10px;
+        .wh(auto,100px);
+       .border();
+       .logo,.banner{margin-top: 10px;}
+       .logo{
+           float:left;
+           .border();
+        }
+       .banner{
+           float:right;
+           .border();
+        }
+       .btn-list{
+           clear:left;
+           .border();
+            button{
+                .wh(auto,@top-btn-height);
+
+            }
+           .btn-follow{
+               width: 66px;
+               .bgpos(-187px,-199px,@imgsplit-bg);
+               .border();
+
+            }
+           .btn-user{
+                width: 106px;
+                .bgpos(-293px,-174px,@imgsplit-bg);
+                .border();
+            }
+           .btn-sns{
+                width: 28px;
+                .bgpos(-500px,-270px,@imgsplit-bg);
+                .border();
+            }
+        }
+
+    }
+    .bottom{
+        .wh(auto,380px);
+        margin:0 30px;
+        .border();
+    }
+}

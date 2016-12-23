@@ -1,0 +1,14 @@
+<script type="text/javascript">
+
+function fademove(li,ldx){
+  li.eq(ldx).removeClass().find('img').stop().fadeOut();
+  ldx ++
+  li.eq(ldx).addClass('on').find('img').stop().fadeIn();
+  if(ldx == li.length){
+    ldx=0
+    li.eq(ldx).addClass('on').find('img').fadeIn().parent().siblings().removeClass('on')
+  }
+
+
+
+</script>

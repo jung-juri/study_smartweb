@@ -20,6 +20,7 @@ div.content>section>div>ol{list-style-position:inside; font-size:14px; line-heig
 .slidebanner ul{ width:500px; height:260px;overflow:hidden;  position:relative; text-align:center; font-size:0}
 .slidebanner li{display: inline-block;}
 .slidebanner li img{position:absolute; left:0; width:100%; top:0; display: none;}
+.slidebanner li:first-child img{display:block;}
 .slidebanner li a{position:relative ; z-index: 1; display:block; width:20px; height:20px; background:#FFF; text-decoration: none; margin:0 1px; top:230px}
 .slidebanner li.on a{background:#E8B482}
 .slidebanner button{position:absolute; top:0; cursor: pointer}
@@ -42,7 +43,10 @@ div.content>section>div>ol{list-style-position:inside; font-size:14px; line-heig
 
 .btngroup{text-align: center}
 
-/*.pop{display: none;}*/
+.pop{position:absolute; background:#ccc; width: 300px; height: 500px; padding:20px; border:1px #F00 solid; display: none;z-index: 2;}
+.pop h2{padding-bottom:10px;border-bottom:1px #F00 solid;}
+.pop button{position:absolute; right:0; top:0; background:#FFF; border:none; width: 50px;height: 30px;}
+.bl{position:fixed;width:100%;height:100%;left:0;top:0;background-color: rgba(0,0,0,.8); z-index: 1; display:none;}
 
 .blaind{position:fixed; width:100%; height:100%; top:0; left:0; background:#000; display: none;}
 .popde{border:1px #F00 solid; padding:20px;}
